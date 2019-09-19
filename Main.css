@@ -24,10 +24,15 @@ form {
   color: black;
 }
 
-fieldset {
+.question {
   border: none;
   text-align: left;
   margin-left: 30px;
+}
+
+.welcomeField, .resultsField, .questionField {
+  text-align: center;
+  border:none;
 }
 
 button {
@@ -37,7 +42,7 @@ button {
   margin-bottom: 15px;
 }
 
-div {
+.score, .progress {
   display:inline-block;
   width: 49%;
 }
