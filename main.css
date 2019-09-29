@@ -1,0 +1,65 @@
+* {
+  box-sizing:border-box;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  background: url("https://consequenceofsound.net/wp-content/uploads/2018/05/the-office-nbc.png?w=807");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+form {
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  background-color: rgba(100,100,100,0.5);
+  width:40%;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  color: black;
+}
+
+.question {
+  border: none;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#answer {
+font-size: 25px;
+font-weight:600;
+}
+
+.welcomeField, .resultsField, .questionField {
+  text-align: center;
+  border:none;
+}
+
+button {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.score, .progress {
+  display:inline-block;
+  width: 49%;
+}
+
+.score {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.progress {
+  text-align: right;
+  padding-right: 25px;
+}
