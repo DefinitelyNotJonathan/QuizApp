@@ -52,6 +52,7 @@ button {
 .score, .progress {
   display:inline-block;
   width: 49%;
+  /*may need to change to display flex*/
 }
 
 .score {

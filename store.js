@@ -1,4 +1,4 @@
-const questions= [
+const STORE= [
 {
 question: "What is the name of Pam's first fiance?",
 options: ["Jim", "Daryl", "Roy", "Michael"],
@@ -37,7 +37,7 @@ answer: "Stapler in Jell-O"
 
 {
 question: "What restaurant chain is Pam banned from?",
-options: ["TGI Fridays", "Red-Robin" "Applebees" "Chilis"],
+options: ["TGI Fridays", "Red-Robin", "Applebees", "Chilis"],
 answer: "Chilis"
 },
 
