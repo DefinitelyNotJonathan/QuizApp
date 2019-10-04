@@ -47,7 +47,7 @@ function finalPage() {
       Score: ${score}/10
     </div>
     <div class="progressCounter">
-      Progress: 0/10
+      Progress: ${currentQuestionIndex+1}/10
     </div>
     `);
     $('form').unbind('submit');
@@ -59,33 +59,23 @@ function finalPage() {
         let correction=STORE[currentQuestionIndex].answer
         $('legend').attr('class','incorrect')
         $('legend').text("Incorrect, the answer is "+correction+".");
-        $('form').unbind('submit');
-        $('form').submit(function(e){
-          e.preventDefault();
-          currentQuestionIndex++;
-          if (currentQuestionIndex>=STORE.length) {
-            renderResultsPage();
-            }
-          else{
-            renderQuestionPage();
-            }
-          });
-        }
+      }
       else {
         $('legend').text('CORRECT!');
         $('form').unbind('submit');
         score++;
-        $('form').submit(function(e){
-          e.preventDefault();
-          currentQuestionIndex++;
-          if (currentQuestionIndex>=STORE.length) {
-            renderResultsPage();
+      }
+      $('form').unbind('submit');
+      $('form').submit(function(e){
+        e.preventDefault();
+        currentQuestionIndex++;
+        if (currentQuestionIndex>=STORE.length) {
+          renderResultsPage();
           }
-          else {
-            renderQuestionPage();
+        else{
+          renderQuestionPage();
           }
         });
-      }
     });
   }
   function renderResultsPage() {

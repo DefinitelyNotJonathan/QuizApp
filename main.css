@@ -99,11 +99,8 @@ Ditto, but also 12" tablets on portrait
 Laptop & desktop displays (1200px+)
 Varies a lot, but is usually 1200px and above
 */
-
-button {
-  display:block;
-  max-width:395.5px;
-  margin:auto;
+.buttonContainer {
+  text-align:center !important;
 }
 
 .score, .progress {
