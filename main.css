@@ -1,5 +1,6 @@
 * {
   box-sizing:border-box;
+  color: rgb(235,235,235);
 }
 
 h1 {
@@ -8,7 +9,7 @@ h1 {
 }
 
 body {
-  background: url("https://consequenceofsound.net/wp-content/uploads/2018/05/the-office-nbc.png?w=807");
+  background-image: url("images/MichaelScott.png");
   background-repeat:no-repeat;
   background-size:cover;
 }
@@ -17,12 +18,13 @@ form {
   margin-left:auto;
   margin-right:auto;
   padding-top:10px;
-  width:50%;
-  height:290px;
+  width:70%;
+  min-height:280px;
   border-width:1px;
-  border-color:white;
+  border-color:rgba(100,100,100,0.85);
   border-style:solid;
-  background-color: rgba(100,100,100,0.5);
+  background-color: rgba(100,100,100,0.85);
+  border-radius:6px;
 }
 fieldset {
   border:none;
@@ -30,39 +32,39 @@ fieldset {
 /*Landing Page*/
 .welcomeForm {
   text-align: center;
+  padding-bottom:30px;
 }
 .welcomeField {
   border:none;
   text-align:center;
 }
 .welcome {
-
-
+  font-size:20px;
 }
 
 p {
   font-size:20px;
 }
+
 /*Questions Page*/
 .questionForm {
-  padding-left:15px;
+
 }
 .questionField {
   border:none;
 }
 .question {
-  padding-top:4px;
   text-align:center;
-  font-size:30px;
+  font-size:20px;
 }
 
 .incorrect {
   text-align:center;
-  font-size:30px;
+  font-size:20px;
 }
 
 label {
-  font-size:20px;
+  font-size:15px;
 }
 /*Results Page*/
 .resultsForm {
@@ -71,18 +73,17 @@ label {
   object-fit:scale-down;
 }
 
-
-
-img {
-  object-fit:cover;
-  width:300px;
+#failPic {
+  width:150px;
   height:150px;
   object-fit:contain;
-  margin-left:auto;
-  margin-right:auto;
 }
 
-media queries
+#passPic {
+  height:150px;
+  width:120px;
+  object-fit:contain;
+}
 
 /*Mobile portait (320px to 414px)
 For devices with 4" to 6.9" screens.
@@ -101,20 +102,21 @@ Varies a lot, but is usually 1200px and above
 */
 .buttonContainer {
   text-align:center !important;
+  margin-bottom:15px;
+}
+button {
+  color:black;
 }
 
 .score, .progress {
   display:inline-block;
-  width: 48%;
   /*may need to change to display flex*/
 }
 
 .score {
-  text-align: left;
-  padding-left: 25px;
+  float:left;
 }
 
 .progress {
-  text-align: right;
-  padding-right: 25px;
+  float: right;
 }

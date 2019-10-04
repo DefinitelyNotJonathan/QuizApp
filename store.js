@@ -12,9 +12,9 @@ answer: "Niagra Falls"
 },
 
 {
-question: "How did Meredith become hospitalized?",
-options: ["She is bitten by a bat", "She is hit by a car", "She is set on fire", "She gets alcohol poisoning"],
-answer: "She is hit by a car"
+question: "why was Meredith hospitalized?",
+options: ["She was bitten by a bat", "She was hit by a car", "She was set on fire", "She was poisoned"],
+answer: "She was hit by a car"
 },
 
 {
@@ -30,7 +30,7 @@ answer: "2"
 },
 
 {
-question: "What is the first ever prank filmed on The Office?",
+question: "What is the first prank filmed on The Office?",
 options: ["Stapler in Jell-O", "Mega-Desk", "Faxes from future Dwight", "Spool of wire"],
 answer: "Stapler in Jell-O"
 },
@@ -48,13 +48,13 @@ answer: "Astrid"
 },
 
 {
-question: "What did Bob Vance donate to Casino Night?",
-options: ["Full size refridgerator", "Mini refridgerator", "Air conditioner", "Water heater"],
-answer: "Mini refridgerator"
+question: "Who was a heart surgeon in a past life?",
+options: ["Holly Flax", "Madge Madsen", "Hidetoshi Hasagawa", "Robert California"],
+answer: "Hidetoshi Hasagawa"
 },
 
 {
-question: "Creed claims he killed a man. What was his name?",
+question: "Who did Creed claim he killed?",
 options: ["Creed Bratton", "Corbin Dallas", "Bob vance", "Todd Packer"],
 answer: "Creed Bratton"
 },

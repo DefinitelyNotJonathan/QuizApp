@@ -11,7 +11,7 @@ function finalPage() {
           <br>
           <p>Score 7 out of 10 points to pass!</p>
         </fieldset>
-      <button type="submit" name="button">Begin</button>
+      <button class="beginButton" type="submit" name="button">Begin</button>
     `);
     $('form').unbind('submit');
     $('form').submit(function(e){
@@ -46,7 +46,7 @@ function finalPage() {
     <div class="score">
       Score: ${score}/10
     </div>
-    <div class="progressCounter">
+    <div class="progress">
       Progress: ${currentQuestionIndex+1}/10
     </div>
     `);
@@ -54,13 +54,18 @@ function finalPage() {
   //submit and answer check
     $('form').submit(function(e){
       e.preventDefault();
+      $('.score').hide();
+      $('.progress').hide();
       $('button').text('Continue');
       if ($('input:checked').val()!==STORE[currentQuestionIndex].answer){
         let correction=STORE[currentQuestionIndex].answer
         $('legend').attr('class','incorrect')
         $('legend').text("Incorrect, the answer is "+correction+".");
+        $('.score').hide();
+        $('.progress').hide();
       }
       else {
+        $('.buttonContainer').prepend('<br>');
         $('legend').text('CORRECT!');
         $('form').unbind('submit');
         score++;
@@ -99,12 +104,12 @@ function finalPage() {
             </div>
             <img src="images/fail.jpg" id="failPic">
         </fieldset>
-        <div class='buttonContainer">
+        <div class="buttonContainer">
           <button type="submit" name="button">Restart Quiz</button>
         </div>
       `);
     }
-
+    $('button').css('margin','20px');
     $('form').unbind('submit');
     $('form').submit(function(e) {
       renderLandingPage();
