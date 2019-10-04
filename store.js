@@ -1,18 +1,18 @@
 const STORE= [
 {
-question: "What is the name of Pam's first fiance?",
+question: "Who was Pam's first fiance?",
 options: ["Jim", "Daryl", "Roy", "Michael"],
 answer: "Roy"
 },
 
 {
-question: "Where are Pam and and Jim married?",
+question: "Where were Pam and and Jim married?",
 options: ["Scranton", "Idaho", "Niagra Falls", "Chili's"],
 answer: "Niagra Falls"
 },
 
 {
-question: "How does Meredith become hospitalized?",
+question: "How did Meredith become hospitalized?",
 options: ["She is bitten by a bat", "She is hit by a car", "She is set on fire", "She gets alcohol poisoning"],
 answer: "She is hit by a car"
 },
@@ -42,19 +42,19 @@ answer: "Chilis"
 },
 
 {
-question: "What is the name of Jan's daughter?",
+question: "What is Jan's daughter's name?",
 options: ["Meredith", "Astird", "Astrid", "Ariel"],
 answer: "Astrid"
 },
 
 {
-question: "What is Phylis's husband's donation to Casino Night?",
+question: "What did Bob Vance donate to Casino Night?",
 options: ["Full size refridgerator", "Mini refridgerator", "Air conditioner", "Water heater"],
 answer: "Mini refridgerator"
 },
 
 {
-question: "At one point, Creed Bratton implies that he killed a man. What was the man's name?",
+question: "Creed claims he killed a man. What was his name?",
 options: ["Creed Bratton", "Corbin Dallas", "Bob vance", "Todd Packer"],
 answer: "Creed Bratton"
 },

@@ -14,44 +14,101 @@ body {
 }
 
 form {
-  border-width: 1px;
-  border-style: solid;
-  border-color: lightgrey;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:10px;
+  width:50%;
+  height:290px;
+  border-width:1px;
+  border-color:white;
+  border-style:solid;
   background-color: rgba(100,100,100,0.5);
-  width:40%;
-  height: 240px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-  color: black;
 }
-
-.question {
-  border: none;
-  text-align: left;
-  margin-left: 30px;
-}
-
-#answer {
-font-size: 25px;
-font-weight:600;
-}
-
-.welcomeField, .resultsField, .questionField {
-  text-align: center;
+fieldset {
   border:none;
 }
+/*Landing Page*/
+.welcomeForm {
+  text-align: center;
+}
+.welcomeField {
+  border:none;
+  text-align:center;
+}
+.welcome {
+
+
+}
+
+p {
+  font-size:20px;
+}
+/*Questions Page*/
+.questionForm {
+  padding-left:15px;
+}
+.questionField {
+  border:none;
+}
+.question {
+  padding-top:4px;
+  text-align:center;
+  font-size:30px;
+}
+
+.incorrect {
+  text-align:center;
+  font-size:30px;
+}
+
+label {
+  font-size:20px;
+}
+/*Results Page*/
+.resultsForm {
+  margin-top:10px;
+  text-align:center;
+  object-fit:scale-down;
+}
+
+
+
+img {
+  object-fit:cover;
+  width:300px;
+  height:150px;
+  object-fit:contain;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+media queries
+
+/*Mobile portait (320px to 414px)
+For devices with 4" to 6.9" screens.
+
+Mobile landscape (568px to 812px)
+Same, but landscape.
+
+Tablet portait (768px to 834px)
+For devices 7" to 10"
+
+Tablet landscape (1024px to 1112px)
+Ditto, but also 12" tablets on portrait
+
+Laptop & desktop displays (1200px+)
+Varies a lot, but is usually 1200px and above
+*/
 
 button {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
+  max-width:395.5px;
+  margin:auto;
 }
 
 .score, .progress {
   display:inline-block;
-  width: 49%;
+  width: 48%;
   /*may need to change to display flex*/
 }
 
