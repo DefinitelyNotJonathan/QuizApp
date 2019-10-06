@@ -100,6 +100,9 @@ h2 {
   width:120px;
   height:180px;
   object-fit:contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .score, .progress {
   display:inline-block;
@@ -125,9 +128,6 @@ h2 {
     margin-top:62px;
   }
   #passPic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     height:200px;
   }
 }
