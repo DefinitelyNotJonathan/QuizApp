@@ -11,7 +11,7 @@ function finalPage() {
           <br>
           <p>Score 7 out of 10 points to pass!</p>
         </fieldset>
-      <button class="beginButton" type="submit" name="button">Begin</button>
+      <button id="beginButton" type="submit" name="button">Begin</button>
     `);
     $('form').unbind('submit');
     $('form').submit(function(e){
@@ -41,7 +41,7 @@ function finalPage() {
         <label for="option-4">${STORE[currentQuestionIndex].options[3]}</label>
       </fieldset>
     <div class="buttonContainer">
-      <button type="submit" name="button">Submit</button>
+      <button type="submit" name="button" id="submitButton">Submit</button>
     </div>
     <div class="score">
       Score: ${score}/10
@@ -59,7 +59,8 @@ function finalPage() {
       $('button').text('Continue');
       if ($('input:checked').val()!==STORE[currentQuestionIndex].answer){
         let correction=STORE[currentQuestionIndex].answer
-        $('legend').attr('class','incorrect')
+        $('legend').attr('class','incorrect');
+        $('button').attr('id','incorrectButton');
         $('legend').text("Incorrect, the answer is "+correction+".");
         $('.score').hide();
         $('.progress').hide();
@@ -112,7 +113,11 @@ function finalPage() {
     $('button').css('margin','20px');
     $('form').unbind('submit');
     $('form').submit(function(e) {
+      e.preventDefault();
+      currentQuestionIndex=0;
+      score=0;
       renderLandingPage();
+
     });
   }
 

@@ -6,21 +6,21 @@ answer: "Roy"
 },
 
 {
-question: "Where were Pam and and Jim married?",
+question: "Where were Pam and Jim wed?",
 options: ["Scranton", "Idaho", "Niagra Falls", "Chili's"],
 answer: "Niagra Falls"
 },
 
 {
-question: "why was Meredith hospitalized?",
+question: "Why was Meredith hospitalized?",
 options: ["She was bitten by a bat", "She was hit by a car", "She was set on fire", "She was poisoned"],
 answer: "She was hit by a car"
 },
 
 {
 question: "What is Dwight's brother's name?",
-options: ["Jonah", "Brendan", "Kemper", "Mose"],
-answer: "Mose"
+options: ["Jonah Schrute", "Brendan Schrute", "Jeb Schrute", "Mose Schrute"],
+answer: "Jeb Schrute"
 },
 
 {
@@ -30,13 +30,13 @@ answer: "2"
 },
 
 {
-question: "What is the first prank filmed on The Office?",
-options: ["Stapler in Jell-O", "Mega-Desk", "Faxes from future Dwight", "Spool of wire"],
+question: "What is the first prank on the show?",
+options: ["Stapler in Jell-O", "Mega-Desk", "Future Dwight faxes", "Spool of wire"],
 answer: "Stapler in Jell-O"
 },
 
 {
-question: "What restaurant chain is Pam banned from?",
+question: "What restaurant is Pam banned from?",
 options: ["TGI Fridays", "Red-Robin", "Applebees", "Chilis"],
 answer: "Chilis"
 },
@@ -48,7 +48,7 @@ answer: "Astrid"
 },
 
 {
-question: "Who was a heart surgeon in a past life?",
+question: "Who was previously a heart surgeon?",
 options: ["Holly Flax", "Madge Madsen", "Hidetoshi Hasagawa", "Robert California"],
 answer: "Hidetoshi Hasagawa"
 },
