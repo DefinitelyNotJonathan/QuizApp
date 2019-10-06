@@ -118,7 +118,6 @@ button {
 .score, .progress {
   display:inline-block;
   font-size:20px;
-  /*may need to change to display flex*/
 }
 
 .score {
@@ -129,6 +128,14 @@ button {
 .progress {
   float: right;
   margin-right:5px;
+}
+
+@media screen and (min-width:568px) {
+
+  form {
+    width:60%;
+  }
+
 }
 
 @media screen and (min-width:768px) {
@@ -172,9 +179,15 @@ button {
   }
 }
 
-/*Mobile portait (320px to 414px)
-For devices with 4" to 6.9" screens.
+@media screen and (mid-width:1024px) {
 
+  form {
+    width:40%;
+  }
+  
+}
+
+/*
 Mobile landscape (568px to 812px)
 Same, but landscape.
 
