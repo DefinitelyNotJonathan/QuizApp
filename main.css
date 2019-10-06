@@ -2,18 +2,17 @@
   box-sizing:border-box;
   color: rgb(235,235,235);
 }
-
 h1 {
   color: white;
   text-align: center;
 }
-
 html {
   background-image: url("images/MichaelScott.jpg");
   background-repeat:no-repeat;
+  background-position:center;
   background-size:cover;
+  min-height:100%;
 }
-
 form {
   margin-left:auto;
   margin-right:auto;
@@ -29,6 +28,12 @@ form {
 fieldset {
   border:none;
 }
+button {
+  color:black;
+  width:35%;
+  font-size:18px;
+  margin:0px;
+}
 /*Landing Page*/
 .welcomeForm {
   text-align: center;
@@ -41,128 +46,115 @@ fieldset {
 .welcome {
   font-size:22px;
 }
-
 p {
   font-size:23px;
 }
-
 #beginButton {
   margin-top:76px;
-  width:30%;
-  font-size:18px;
 }
-
 /*Questions Page*/
 .questionField {
   border:none;
 }
-
 .question {
   text-align:center;
   font-size:25px;
   margin-bottom:35px;
 }
-
-
-
 label {
   font-size:20px;
 }
-
 .buttonContainer {
   text-align:center !important;
-  margin-bottom:15px;
-}
-
-button {
-  color:black;
-  width:auto;
-  font-size:18px;
+  margin-bottom:10px;
 }
 #submitButton {
   margin-top:70px;
 }
-
 /*incorrect*/
 .incorrect {
   text-align:center;
   font-size:25px;
 }
-
 #incorrectButton {
   margin-top: 100px;
 }
-
 /*Results Page*/
 .resultsForm {
-  margin-top:10px;
+  padding-top:0;
   text-align:center;
   object-fit:scale-down;
 }
-
+h2 {
+  font-size:26px;
+}
+.finalScore {
+  font-size:20px;
+}
 #failPic {
-  width:150px;
-  height:150px;
+  width:200px;
+  height:175px;
   object-fit:contain;
 }
-
 #passPic {
-  height:150px;
   width:120px;
+  height:180px;
   object-fit:contain;
 }
-
-
-
-
 .score, .progress {
   display:inline-block;
   font-size:20px;
 }
-
 .score {
   float:left;
   margin-left:5px;
 }
-
 .progress {
   float: right;
   margin-right:5px;
 }
-
 @media screen and (min-width:568px) {
 
   form {
     width:60%;
   }
-
+  .welcome {
+    font-size:25px;
+  }
+  #beginButton {
+    margin-top:62px;
+  }
+  #passPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:200px;
+  }
 }
 
 @media screen and (min-width:768px) {
 
   form {
-    min-height: 420px;
+    width:50%;
   }
-
+  button {
+    width:30%;
+    font-size:24px;
+  }
   .welcome {
     font-size:36px;
   }
-
   p {
     font-size:26px;
-    margin-bottom:65px;
+    margin-bottom:10px;
   }
-
   #beginButton {
-    width: 30%;
-    font-size: 24px;
+    margin-top:20px;
   }
-
   .question {
     font-size:36px;
     margin-bottom:20px;
   }
-
   label {
     font-size:25px;
   }
@@ -170,23 +162,60 @@ button {
     font-size:25px;
   }
   #submitButton {
-    width: 25%;
-    font-size: 24px;
     margin-top:20px;
   }
   .incorrect {
     font-size:36px;
   }
+  #incorrectButton {
+    margin-top:39px;
+  }
+
+  h2 {
+    font-size:30px;
+  }
+
+  #passPic {
+    height:225px;
+  }
+  button {
+    margin:0px;
+  }
+  }
+  #restartButton {
+    margin:0px;
+  }
 }
 
-@media screen and (mid-width:1024px) {
+@media screen and (min-width:1024px) {
 
   form {
     width:40%;
   }
-  
+  h2 {
+    font-size:32px;
+  }
+  p {
+    margin-bottom:29px;
+  }
+  #beginButton {
+    margin-top:0px;
+  }
+  .finalScore {
+    font-size:24px;
+  }
+  #failPic {
+    width:250px;
+  }
+  #incorrectButton {
+    margin-top:40px
+  }
+  #restartButton {
+    margin-bottom:0px;
+  }
 }
 
+@media screen and (min-width:1200px;)
 /*
 Mobile landscape (568px to 812px)
 Same, but landscape.

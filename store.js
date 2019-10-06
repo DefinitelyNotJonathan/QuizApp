@@ -13,7 +13,7 @@ answer: "Niagra Falls"
 
 {
 question: "Why was Meredith hospitalized?",
-options: ["She was bitten by a bat", "She was hit by a car", "She was set on fire", "She was poisoned"],
+options: ["She was bitten", "She was hit by a car", "She was set on fire", "She was poisoned"],
 answer: "She was hit by a car"
 },
 
@@ -48,7 +48,7 @@ answer: "Astrid"
 },
 
 {
-question: "Who was previously a heart surgeon?",
+question: "Who is 'Heart Surgeon #1'?",
 options: ["Holly Flax", "Madge Madsen", "Hidetoshi Hasagawa", "Robert California"],
 answer: "Hidetoshi Hasagawa"
 },

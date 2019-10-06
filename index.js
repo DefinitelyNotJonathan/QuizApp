@@ -11,7 +11,9 @@ function finalPage() {
           <br>
           <p>Score 7 out of 10 points to pass!</p>
         </fieldset>
-      <button id="beginButton" type="submit" name="button">Begin</button>
+      <div class="buttonContainer">
+        <button id="beginButton" type="submit" name="button">Begin</button>
+      </div>
     `);
     $('form').unbind('submit');
     $('form').submit(function(e){
@@ -94,7 +96,7 @@ function finalPage() {
             </div>
         </fieldset>
         <img src="images/pass.jpg" id="passPic">
-        <button type="submit" name="button">Restart Quiz</button>
+        <button type="submit" name="button" class="restartButton">Restart Quiz</button>
       `);
     }
     else {
@@ -106,7 +108,7 @@ function finalPage() {
             <img src="images/fail.jpg" id="failPic">
         </fieldset>
         <div class="buttonContainer">
-          <button type="submit" name="button">Restart Quiz</button>
+          <button type="submit" name="button" class="restartButton" >Restart Quiz</button>
         </div>
       `);
     }
