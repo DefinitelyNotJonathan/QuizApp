@@ -25,7 +25,7 @@ function finalPage() {
     $('form').attr('class','questionForm');
     $('form').html(`
       <fieldset class="questionField">
-        <legend class="question">${STORE[currentQuestionIndex].question}</legend>
+        <legend class="question" name="question">${STORE[currentQuestionIndex].question}</legend>
         <br>
         <input type="radio" name="option" id="option-1" value="${STORE[currentQuestionIndex].options[0]}" checked required>
         <label for="option-1">${STORE[currentQuestionIndex].options[0]}</label>
@@ -68,7 +68,6 @@ function finalPage() {
         $('.progress').hide();
       }
       else {
-        $('.buttonContainer').prepend('<br>');
         $('legend').text('CORRECT!');
         $('form').unbind('submit');
         score++;
@@ -95,20 +94,20 @@ function finalPage() {
             <div class="finalScore">Final score: ${score}/10
             </div>
         </fieldset>
-        <img src="images/pass.jpg" id="passPic">
-        <button type="submit" name="button" class="restartButton">Restart Quiz</button>
+        <img src="images/pass.jpg" id="passPic" alt="image of trophy">
+        <button type="submit" name="button" class="restartButton">Restart</button>
       `);
     }
     else {
       $('form').html(`
         <fieldset class="resultsField">
-          <h2 class="finalResults">Sorry, you didn't pass. Try again!</h2>
-            <div class="finalScore">Final score: ${score}/10
+          <h2 class="finalResults" name="results">Sorry, you didn't pass. Try again!</h2>
+            <div class="finalScore" name="finalScore">Final score: ${score}/10
             </div>
-            <img src="images/fail.jpg" id="failPic">
+            <img src="images/fail.jpg" id="failPic" alt="image of cringing face">
         </fieldset>
         <div class="buttonContainer">
-          <button type="submit" name="button" class="restartButton" >Restart Quiz</button>
+          <button type="submit" name="button" class="restartButton" >Restart</button>
         </div>
       `);
     }
